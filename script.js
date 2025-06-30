@@ -4,7 +4,7 @@ const num = document.querySelector(".num");
 let a = 1;
 plus.addEventListener("click", () => {
     a++;
-    a = (a < 10) ? "0" + a : a;
+    a = (a < 10 & a>0) ? "0" + a : a;
     num.innerText = a;
 })
 minus.addEventListener("click", () => {
